@@ -11,10 +11,10 @@ tags = {
 }
 
 subnets = {
-  "public-subnet-1"  = { cidr = "10.1.1.0/24", az = "us-east-1a", is_public = true }
-  "public-subnet-2"  = { cidr = "10.1.2.0/24", az = "us-east-1b", is_public = true }
-  "private-subnet-1" = { cidr = "10.1.3.0/24", az = "us-east-1a", is_public = false }
-  "private-subnet-2" = { cidr = "10.1.4.0/24", az = "us-east-1b", is_public = false }
+  "public-subnet-1"  = { cidr = "10.1.1.0/24", az = "ap-south-1a", is_public = true }
+  "public-subnet-2"  = { cidr = "10.1.2.0/24", az = "ap-south-1b", is_public = true }
+  "private-subnet-1" = { cidr = "10.1.3.0/24", az = "ap-south-1a", is_public = false }
+  "private-subnet-2" = { cidr = "10.1.4.0/24", az = "ap-south-1b", is_public = false }
 }
 
 ec2_instances = {
