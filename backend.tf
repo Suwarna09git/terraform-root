@@ -13,6 +13,6 @@ terraform {
     region         = "ap-south-1"
     key            = "terraform-root/terraform.tfstate"
     encrypt        = true
-    dynamodb_table = "terraform-locks"
+    use_lockfile   = true
   }
 }
