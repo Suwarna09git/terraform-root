@@ -9,10 +9,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "jenkins-server-terraform-32"
+    bucket         = "young-minds-app-terraform-state"
     region         = "ap-south-1"
-    key            = "terraform-root/terraform.tfstate"
+    key            = "batch-32/terraform.tfstate"
     encrypt        = true
-    use_lockfile   = true
+    dynamodb_table = "terraform-locks"
   }
 }
